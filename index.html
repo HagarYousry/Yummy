@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body >
+    <div
+        class="loading w-100 top-0 start-0 bottom-0 bg-black position-fixed d-flex align-items-center justify-content-center d-non">
+        <i class="fas fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+
+
+    <div class="navigation position-fixed d-flex top-0 min-vh-100 bg-black">
+        <div class="nav-tap d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="navLinks">
+                <ul class="list-unstyled py-4 pe-2 overflow-hidden">
+                    <li class="position-relative py-2 "><a id="search" class="text-decoration-none text-white cursor-pointer"
+                            href="">Search</a></li>
+                    <li class="position-relative py-2 "><a id="categories" class="text-decoration-none text-white cursor-pointer "
+                            href="">Categories</a></li>
+                    <li class="position-relative py-2 "><a id="area" class="text-decoration-none text-white cursor-pointer "
+                            href="">Area</a></li>
+                    <li class="position-relative py-2 "><a id="ingredients" class="text-decoration-none text-white cursor-pointer "
+                            href="">Ingredients</a></li>
+                    <li class="position-relative py-2 "><a id="contactUs" class="text-decoration-none text-white cursor-pointer "
+                            href="">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-footer ms-4 py-4 pe-2 text-white cursor-pointer">
+                <div class="icons ">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div>
+                    <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav-open py-4 text-center px-2 d-flex flex-column bg-white justify-content-between text-dark ">
+            <img class="logo" src="imgs/logo.png" alt="logo" width="50" />
+            <i class="fa-solid open-close-nav fa-bars fa-2x curser-pointer"></i>
+
+            <div>
+                <i class="fa-solid fa-globe d-block curser-pointer"></i>
+                <i class="fa-solid fa-share-nodes curser-pointer"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container w-75">
+        <div class="form row py-5 g-4" id="searchContainer"></div>
+    </div>
+
+
+
+    <div class="container w-75">
+        <div class="row py-5 g-4" id="rowData">
+
+        </div>
+    </div>
+
+
+
+    <!-- jquery  -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- index js  -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
